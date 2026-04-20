@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(curl -sS -o /dev/null -w \"HTTP %{http_code} | %{size_download} bytes\\\\n\" http://localhost:5173/)",
+      "Bash(curl -sS -o /dev/null -w \"HTTP %{http_code} | content-type: %{content_type}\\\\n\" http://localhost:5173/src/main.jsx)",
+      "Bash(curl -sS \"http://localhost:5173/src/App.jsx\" -o /dev/null -w \"App.jsx: %{http_code}\\\\n\")",
+      "Bash(curl -sS \"http://localhost:5173/src/components/MapsGallery.jsx\" -o /dev/null -w \"MapsGallery.jsx: %{http_code}\\\\n\")",
+      "Bash(curl -sS \"http://localhost:5173/src/index.css\" -o /dev/null -w \"index.css: %{http_code}\\\\n\")",
+      "Bash(curl *)",
+      "WebFetch(domain:liquipedia.net)",
+      "WebSearch",
+      "WebFetch(domain:store.steampowered.com)",
+      "WebFetch(domain:en.wikipedia.org)",
+      "WebFetch(domain:github.com)"
+    ]
+  }
+}
